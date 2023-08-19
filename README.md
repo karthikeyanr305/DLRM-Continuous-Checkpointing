@@ -119,8 +119,14 @@ Here, the number of epochs, data size, mini-batch size, and kafka topic can be m
 Benchmarking
 ------------
 
+
 <img src="./line_graph.png">
+
+
+
 <img src="./number_diff.png">
+
+
 
 From the experiments run, we can see that the time taken to save the model in continuous checkpoints gradually reduces as the data size increases and, in turn, performs better than the default DLRM saving mechanism. However, this pattern is not seen while loading the model, the time difference between the Continuous checkpoints and DLRM is very minimal. The DLRM outperforms the Continuous checkpoints by a minute margin. This might be due to the fact that we process the messages from the Kafka stream and load them to the latest marker through nested loops.  However, the improvement in saving performance by the Continuous checkpoints outweighs the minimal drawback in the loading mechanism. 
 
