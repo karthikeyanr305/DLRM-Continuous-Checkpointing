@@ -75,7 +75,7 @@ On the [embedding compression techniques (for dimension of vectors)](https://arx
   year      = {2019},
   url       = {https://arxiv.org/abs/1909.11810},
 }
-```
+
 
 Implementation
 --------------
