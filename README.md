@@ -120,8 +120,11 @@ Benchmarking
 ------------
 
 
+
 <img src="./line_graph.png">
 
+
+Comparing run time between the default DLRM checkpoint mechanism and the continuous checkpointing.
 
 
 <img src="./number_diff.png">
